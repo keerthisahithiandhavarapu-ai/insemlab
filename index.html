@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Library Management System</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="admin.html">Admin</a>
+      <a href="user.html">User</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Welcome to Our Library</h2>
+    <p>Manage books and explore the available collection.</p>
+
+    <input id="search" type="text"
+      placeholder="Search books..." oninput="searchBooks()">
+
+    <div id="bookList" class="books">
+      <div class="book">
+        <h3>Java Programming</h3>
+        <p>Author: James Gosling</p>
+      </div>
+      <div class="book">
+        <h3>Python Basics</h3>
+        <p>Author: Guido van Rossum</p>
+      </div>
+      <div class="book">
+        <h3>Web Development</h3>
+        <p>Author: Jon Duckett</p>
+      </div>
+    </div>
+
+    <p id="message"></p>
+  </main>
+
+  <footer>
+    <p>Library Management System | 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="admin.html">Admin</a>
+      <a href="user.html">User</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Add a New Book</h2>
+
+    <form id="bookForm">
+      <input id="bookTitle" type="text"
+        placeholder="Book title" required>
+      <input id="bookAuthor" type="text"
+        placeholder="Author name" required>
+      <button type="submit">Add Book</button>
+    </form>
+
+    <p id="adminMessage"></p>
+    <p><a href="index.html">View Library Collection</a></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>User Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="admin.html">Admin</a>
+      <a href="user.html">User</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Available Library Services</h2>
+    <div class="book">
+      <h3>Search Books</h3>
+      <p>Find books using the home page search.</p>
+      <a href="index.html">Search Now</a>
+    </div>
+    <div class="book">
+      <h3>Book Collection</h3>
+      <p>Explore the books available in our library.</p>
+      <a href="index.html">View Books</a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
